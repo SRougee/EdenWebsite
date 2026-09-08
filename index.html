@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eden Steel Engineering | Laser Cutting &amp; Bending, Boksburg</title>
+<meta name="description" content="Eden Steel Engineering (Pty) Ltd — precision laser cutting and bending of mild and stainless steel in Boksburg, Gauteng. Get a quote from Theuns Jacobs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#D8232A;
+    --red-dark:#A9151B;
+    --charcoal:#242426;
+    --charcoal-2:#333336;
+    --steel:#8A9198;
+    --steel-light:#D7DADD;
+    --bg:#F5F4F2;
+    --white:#FFFFFF;
+    --ink:#1C1C1E;
+    --ink-soft:#5A5C60;
+    --radius:2px;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.55;
+  }
+  h1,h2,h3,.eyebrow-num{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;
+    letter-spacing:0.01em;
+    margin:0;
+  }
+  img,svg{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    font-family:'Inter',sans-serif;font-weight:600;font-size:15px;
+    padding:14px 26px;border-radius:var(--radius);text-decoration:none;
+    border:2px solid transparent;cursor:pointer;transition:transform .15s ease, background .15s ease;
+  }
+  .btn:active{transform:scale(0.98);}
+  .btn-red{background:var(--red);color:#fff;}
+  .btn-red:hover{background:var(--red-dark);}
+  .btn-outline{border-color:rgba(255,255,255,0.35);color:#fff;}
+  .btn-outline:hover{border-color:#fff;}
+  .btn-outline-dark{border-color:var(--charcoal);color:var(--charcoal);}
+  .btn-outline-dark:hover{background:var(--charcoal);color:#fff;}
+  :focus-visible{outline:3px solid var(--red);outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){*{animation:none !important;transition:none !important;scroll-behavior:auto !important;}}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:var(--charcoal);
+    border-bottom:3px solid var(--red);
+  }
+  .header-inner{display:flex;align-items:center;justify-content:space-between;height:64px;}
+  .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;}
+  .brand-mark{width:30px;height:30px;flex:none;}
+  .brand-text{font-family:'Barlow Condensed';font-weight:700;font-size:19px;line-height:1;letter-spacing:0.02em;}
+  .brand-text span{display:block;font-family:'Inter';font-weight:500;font-size:9.5px;color:var(--steel-light);letter-spacing:0.06em;margin-top:2px;}
+  .header-call{
+    display:flex;align-items:center;gap:7px;color:#fff;text-decoration:none;
+    font-family:'Barlow Condensed';font-weight:600;font-size:16px;
+  }
+  .header-call svg{width:17px;height:17px;fill:var(--red);}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;background:var(--charcoal);color:#fff;overflow:hidden;
+    padding:52px 0 60px;
+  }
+  .hero-plate{position:absolute;inset:0;z-index:0;opacity:0.9;}
+  .hero-inner{position:relative;z-index:1;}
+  .hero-eyebrow{
+    font-family:'Inter';font-weight:600;font-size:13px;color:var(--red);
+    text-transform:none;margin-bottom:14px;
+  }
+  .hero h1{font-size:42px;line-height:1.04;max-width:11ch;}
+  .hero h1 em{font-style:normal;color:var(--red);}
+  .hero p.lead{
+    margin-top:18px;font-size:17px;color:#D8D9DB;max-width:46ch;
+  }
+  .hero-actions{display:flex;flex-direction:column;gap:12px;margin-top:28px;max-width:320px;}
+  .hero-stats{
+    display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,0.12);
+    margin-top:40px;border-radius:var(--radius);overflow:hidden;
+  }
+  .hero-stat{background:var(--charcoal-2);padding:18px 16px;}
+  .hero-stat .num{font-family:'Barlow Condensed';font-weight:700;font-size:30px;color:#fff;}
+  .hero-stat .num small{font-size:16px;color:var(--steel-light);font-weight:500;}
+  .hero-stat .label{font-size:12.5px;color:var(--steel-light);margin-top:2px;}
+
+  /* ---------- Section basics ---------- */
+  section{padding:56px 0;}
+  .section-head{max-width:44ch;margin-bottom:32px;}
+  .section-head .kicker{
+    display:inline-block;font-size:13px;font-weight:600;color:var(--red);margin-bottom:8px;
+  }
+  .section-head h2{font-size:30px;color:var(--ink);line-height:1.08;}
+  .section-head p{color:var(--ink-soft);margin-top:10px;font-size:15.5px;}
+  .on-dark{background:var(--ink);color:#fff;}
+  .on-dark .section-head h2{color:#fff;}
+  .on-dark .section-head p{color:#B9BABD;}
+
+  /* ---------- Services ---------- */
+  .service-cards{display:flex;flex-direction:column;gap:16px;}
+  .service-card{
+    background:var(--white);border:1px solid #E4E2DE;border-radius:var(--radius);
+    padding:24px;position:relative;
+  }
+  .service-card .tag{
+    position:absolute;top:0;right:0;background:var(--red);color:#fff;
+    font-family:'Barlow Condensed';font-weight:600;font-size:13px;
+    padding:5px 12px;
+  }
+  .service-icon{width:52px;height:52px;margin-bottom:16px;}
+  .service-card h3{font-size:23px;color:var(--ink);margin-bottom:8px;}
+  .service-card p{color:var(--ink-soft);font-size:15px;margin:0 0 16px;}
+  .spec-row{display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid #ECEAE6;font-size:14.5px;}
+  .spec-row:last-child{border-bottom:1px solid #ECEAE6;}
+  .spec-row .k{color:var(--ink-soft);}
+  .spec-row .v{font-weight:600;color:var(--ink);}
+
+  /* ---------- Process ---------- */
+  .process{display:flex;flex-direction:column;gap:0;}
+  .process-step{display:flex;gap:16px;padding:20px 0;border-top:1px solid rgba(255,255,255,0.12);}
+  .process-step:last-child{border-bottom:1px solid rgba(255,255,255,0.12);}
+  .process-num{
+    font-family:'Barlow Condensed';font-weight:700;font-size:26px;color:var(--red);
+    flex:none;width:34px;
+  }
+  .process-step h3{font-size:18px;color:#fff;margin-bottom:4px;font-family:'Inter';font-weight:600;}
+  .process-step p{margin:0;color:#B9BABD;font-size:14.5px;}
+
+  /* ---------- Materials ---------- */
+  .material-cards{display:flex;flex-direction:column;gap:16px;}
+  .material-card{
+    border-radius:var(--radius);overflow:hidden;border:1px solid #E4E2DE;background:#fff;
+  }
+  .material-swatch{height:110px;position:relative;}
+  .swatch-mild{background:linear-gradient(115deg,#7c828a 0%,#a9afb5 22%,#5f646b 48%,#c2c7cc 64%,#6d7278 100%);}
+  .swatch-ss{background:linear-gradient(115deg,#c9ccce 0%,#f2f3f3 20%,#a7abae 45%,#e9eaea 70%,#b6b9bb 100%);}
+  .material-card .body{padding:18px 20px 20px;}
+  .material-card h3{font-size:20px;margin-bottom:6px;}
+  .material-card p{margin:0;color:var(--ink-soft);font-size:14.5px;}
+
+  /* ---------- Work grid (illustrated, not stock photos) ---------- */
+  .work-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .work-tile{
+    aspect-ratio:1/1;background:var(--charcoal);border-radius:var(--radius);
+    display:flex;flex-direction:column;justify-content:flex-end;padding:14px;position:relative;overflow:hidden;
+  }
+  .work-tile svg{position:absolute;inset:0;width:100%;height:100%;opacity:0.9;}
+  .work-tile .label{position:relative;z-index:1;color:#fff;font-family:'Barlow Condensed';font-weight:600;font-size:15px;}
+
+  /* ---------- Why us ---------- */
+  .why-list{display:flex;flex-direction:column;gap:18px;}
+  .why-item{display:flex;gap:14px;align-items:flex-start;}
+  .why-item svg{width:24px;height:24px;flex:none;fill:var(--red);margin-top:2px;}
+  .why-item h3{font-size:17px;font-family:'Inter';font-weight:600;margin-bottom:3px;}
+  .why-item p{margin:0;color:var(--ink-soft);font-size:14.5px;}
+
+  /* ---------- Contact ---------- */
+  .contact{background:var(--charcoal);color:#fff;}
+  .contact-grid{display:flex;flex-direction:column;gap:40px;}
+  .contact-details{display:flex;flex-direction:column;gap:18px;}
+  .contact-row{display:flex;gap:14px;align-items:flex-start;}
+  .contact-row svg{width:20px;height:20px;fill:var(--red);flex:none;margin-top:3px;}
+  .contact-row .k{font-size:12.5px;color:var(--steel-light);text-transform:none;margin-bottom:2px;}
+  .contact-row .v{font-size:15.5px;font-weight:500;}
+  .contact-row a{text-decoration:none;}
+  .contact-row a:hover{color:var(--red);}
+
+  form.quote-form{display:flex;flex-direction:column;gap:14px;background:var(--charcoal-2);padding:22px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.08);}
+  .quote-form label{font-size:13px;color:var(--steel-light);margin-bottom:6px;display:block;}
+  .quote-form input,.quote-form textarea,.quote-form select{
+    width:100%;padding:12px 13px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.16);
+    background:rgba(255,255,255,0.04);color:#fff;font-family:'Inter';font-size:15px;
+  }
+  .quote-form input::placeholder,.quote-form textarea::placeholder{color:#8B8D91;}
+  .quote-form input:focus,.quote-form textarea:focus,.quote-form select:focus{border-color:var(--red);}
+  .quote-form textarea{resize:vertical;min-height:96px;}
+  .form-row2{display:flex;flex-direction:column;gap:14px;}
+  .form-note{font-size:12.5px;color:#8B8D91;margin-top:2px;}
+  #formStatus{font-size:14px;margin-top:4px;min-height:18px;}
+  #formStatus.ok{color:#7CD98C;}
+  #formStatus.err{color:#F08A8A;}
+
+  .map-wrap{border-radius:var(--radius);overflow:hidden;border:1px solid rgba(255,255,255,0.14);}
+  .map-wrap iframe{width:100%;height:280px;border:0;display:block;filter:grayscale(0.25) contrast(1.05);}
+
+  footer{background:#19191A;color:#8B8D91;padding:26px 0 90px;font-size:13px;}
+  .footer-inner{display:flex;flex-direction:column;gap:6px;}
+  footer a{color:#B9BABD;text-decoration:none;}
+  footer a:hover{color:#fff;}
+
+  /* Sticky mobile call bar */
+  .sticky-cta{
+    position:fixed;left:0;right:0;bottom:0;z-index:60;
+    display:flex;background:var(--red);
+  }
+  .sticky-cta a{
+    flex:1;text-align:center;padding:14px 8px;color:#fff;text-decoration:none;
+    font-family:'Barlow Condensed';font-weight:600;font-size:16px;
+    display:flex;align-items:center;justify-content:center;gap:8px;
+  }
+  .sticky-cta a:first-child{background:var(--charcoal);}
+  .sticky-cta svg{width:16px;height:16px;fill:#fff;}
+
+  /* ---------- Desktop breakpoint ---------- */
+  @media (min-width:760px){
+    .wrap{padding:0 40px;}
+    .hero{padding:88px 0 96px;}
+    .hero h1{font-size:64px;max-width:13ch;}
+    .hero p.lead{font-size:19px;}
+    .hero-actions{flex-direction:row;max-width:none;}
+    .hero-stats{max-width:520px;}
+    section{padding:88px 0;}
+    .section-head h2{font-size:40px;}
+    .service-cards{flex-direction:row;}
+    .service-card{flex:1;}
+    .material-cards{flex-direction:row;}
+    .material-card{flex:1;}
+    .work-grid{grid-template-columns:repeat(4,1fr);}
+    .contact-grid{flex-direction:row;}
+    .contact-details{flex:0 0 320px;}
+    form.quote-form{flex:1;}
+    .form-row2{flex-direction:row;}
+    .sticky-cta{display:none;}
+    footer{padding:30px 0;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="2" y="6" width="18" height="7" fill="#D8232A"/>
+        <rect x="2" y="16.5" width="12" height="7" fill="#8A9198"/>
+        <rect x="2" y="27" width="18" height="7" fill="#D8232A"/>
+      </svg>
+      <span class="brand-text">EDEN STEEL<span>ENGINEERING (PTY) LTD</span></span>
+    </a>
+    <a class="header-call" href="tel:+27824631574">
+      <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.4 6.4l2.1-2.1c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.1 21 3 12.9 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1L6.6 10.8z"/></svg>
+      082 463 1574
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ---------- HERO ---------- -->
+  <section class="hero">
+    <svg class="hero-plate" viewBox="0 0 800 700" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="plateGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#3a3a3d"/>
+          <stop offset="55%" stop-color="#242426"/>
+          <stop offset="100%" stop-color="#1a1a1b"/>
+        </linearGradient>
+      </defs>
+      <rect x="380" y="0" width="500" height="700" fill="url(#plateGrad)"/>
+      <line x1="420" y1="-20" x2="900" y2="720" stroke="#3a3a3d" stroke-width="2"/>
+      <line x1="470" y1="-20" x2="950" y2="720" stroke="#3a3a3d" stroke-width="2"/>
+      <!-- laser cut line -->
+      <path d="M 430 90 L 640 90 L 700 220 L 640 420 L 760 560" fill="none" stroke="#D8232A" stroke-width="2" stroke-dasharray="7 7" opacity="0.85"/>
+      <circle cx="430" cy="90" r="4" fill="#D8232A"/>
+      <circle cx="760" cy="560" r="4" fill="#D8232A"/>
+      <!-- sparks -->
+      <g fill="#D8232A">
+        <circle cx="700" cy="220" r="2.4"/>
+        <circle cx="716" cy="208" r="1.6"/>
+        <circle cx="690" cy="238" r="1.4"/>
+        <circle cx="722" cy="230" r="1.8"/>
+        <circle cx="705" cy="196" r="1.2"/>
+      </g>
+      <g fill="#8A9198" opacity="0.5">
+        <circle cx="640" cy="420" r="2"/>
+        <circle cx="656" cy="408" r="1.4"/>
+        <circle cx="628" cy="436" r="1.1"/>
+      </g>
+    </svg>
+    <div class="wrap hero-inner">
+      <div class="hero-eyebrow">Boksburg, Gauteng — Unit 5, 225 Brakpan Road</div>
+      <h1>Steel cut and bent <em>to spec</em>, on schedule.</h1>
+      <p class="lead">Eden Steel Engineering laser-cuts and bends mild and stainless steel for workshops, contractors and manufacturers across the East Rand. Send us a drawing, get a firm quote back fast.</p>
+      <div class="hero-actions">
+        <a href="#quote" class="btn btn-red">Request a quote</a>
+        <a href="tel:+27824631574" class="btn btn-outline">Call Theuns Jacobs</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num">12<small>mm</small></div>
+          <div class="label">Max mild steel, laser cut</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">6<small>mm</small></div>
+          <div class="label">Max stainless steel, laser cut</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">3200<small>mm</small></div>
+          <div class="label">Max bending length</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">8<small>mm</small></div>
+          <div class="label">Max bending plate thickness</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- SERVICES ---------- -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Capabilities</span>
+        <h2>Two processes, done properly.</h2>
+        <p>We keep our capability list short on purpose — laser cutting and bending, run in-house, so every job stays under one roof from drawing to collection.</p>
+      </div>
+      <div class="service-cards">
+        <div class="service-card">
+          <span class="tag">Laser cutting</span>
+          <svg class="service-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="6" width="40" height="40" rx="1" stroke="#8A9198" stroke-width="2"/>
+            <path d="M6 20 L20 6 M46 32 L32 46" stroke="#D8232A" stroke-width="2" stroke-dasharray="4 4"/>
+          </svg>
+          <h3>Laser cutting</h3>
+          <p>Clean, precise cuts on mild and stainless steel sheet, straight from your CAD file or a marked-up drawing.</p>
+          <div class="spec-row"><span class="k">Mild steel</span><span class="v">Up to 12mm</span></div>
+          <div class="spec-row"><span class="k">Stainless steel</span><span class="v">Up to 6mm</span></div>
+        </div>
+        <div class="service-card">
+          <span class="tag">Bending</span>
+          <svg class="service-icon" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 36 L26 20 L44 36" stroke="#8A9198" stroke-width="2" stroke-linecap="round"/>
+            <path d="M8 36 L44 36" stroke="#D8232A" stroke-width="2"/>
+            <circle cx="26" cy="20" r="2" fill="#D8232A"/>
+          </svg>
+          <h3>Press brake bending</h3>
+          <p>Accurate folds on long runs and heavier plate, for brackets, enclosures, chutes and structural components.</p>
+          <div class="spec-row"><span class="k">Max length</span><span class="v">3200mm</span></div>
+          <div class="spec-row"><span class="k">Max plate</span><span class="v">8mm</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- PROCESS ---------- -->
+  <section class="on-dark">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker" style="color:#EF6B6F;">How it works</span>
+        <h2>From drawing to collection in three steps.</h2>
+      </div>
+      <div class="process">
+        <div class="process-step">
+          <div class="process-num">01</div>
+          <div>
+            <h3>Send your drawing or spec</h3>
+            <p>Email a DXF, PDF or even a photo of a hand sketch with dimensions to Technical@edensteeleng.co.za.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">02</div>
+          <div>
+            <h3>Get a firm quote</h3>
+            <p>We confirm material, thickness and quantity, then send pricing and a realistic turnaround time.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-num">03</div>
+          <div>
+            <h3>Cut, bend, collect</h3>
+            <p>Your parts are cut and bent to tolerance and ready for collection from our Boksburg workshop, or delivery by arrangement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- MATERIALS ---------- -->
+  <section id="materials">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Materials</span>
+        <h2>Mild steel and stainless, stocked and ready.</h2>
+      </div>
+      <div class="material-cards">
+        <div class="material-card">
+          <div class="material-swatch swatch-mild"></div>
+          <div class="body">
+            <h3>Mild steel</h3>
+            <p>Cut up to 12mm thick, bent up to 8mm — the workhorse for brackets, frames and structural parts.</p>
+          </div>
+        </div>
+        <div class="material-card">
+          <div class="material-swatch swatch-ss"></div>
+          <div class="body">
+            <h3>Stainless steel</h3>
+            <p>Cut up to 6mm thick for food-grade, hygienic and corrosion-resistant applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- RECENT WORK (illustrated placeholders) ---------- -->
+  <section class="on-dark" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker" style="color:#EF6B6F;">Typical jobs</span>
+        <h2>What we cut and bend most.</h2>
+        <p>A few of the part types that come through the shop regularly.</p>
+      </div>
+      <div class="work-grid">
+        <div class="work-tile">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="200" fill="#2c2c2e"/><rect x="40" y="60" width="120" height="80" fill="none" stroke="#8A9198" stroke-width="3"/><line x1="40" y1="100" x2="160" y2="100" stroke="#D8232A" stroke-width="2" stroke-dasharray="5 5"/></svg>
+          <span class="label">Enclosures &amp; housings</span>
+        </div>
+        <div class="work-tile">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="200" fill="#2c2c2e"/><path d="M50 150 L50 90 L100 50 L150 90 L150 150" fill="none" stroke="#8A9198" stroke-width="3"/><line x1="50" y1="90" x2="150" y2="90" stroke="#D8232A" stroke-width="2" stroke-dasharray="5 5"/></svg>
+          <span class="label">Brackets &amp; supports</span>
+        </div>
+        <div class="work-tile">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="200" fill="#2c2c2e"/><rect x="45" y="50" width="110" height="14" fill="none" stroke="#8A9198" stroke-width="3"/><rect x="45" y="93" width="110" height="14" fill="none" stroke="#8A9198" stroke-width="3"/><rect x="45" y="136" width="110" height="14" fill="none" stroke="#D8232A" stroke-width="3"/></svg>
+          <span class="label">Flat plate &amp; blanks</span>
+        </div>
+        <div class="work-tile">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="200" fill="#2c2c2e"/><path d="M50 60 L150 60 L150 90 L90 90 L90 120 L150 120 L150 150 L50 150" fill="none" stroke="#8A9198" stroke-width="3"/><circle cx="50" cy="60" r="3" fill="#D8232A"/></svg>
+          <span class="label">Chutes &amp; channels</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- WHY US ---------- -->
+  <section id="why">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Why Eden Steel</span>
+        <h2>Straightforward to work with.</h2>
+      </div>
+      <div class="why-list">
+        <div class="why-item">
+          <svg viewBox="0 0 24 24"><path d="M12 2 3 7v6c0 5 3.8 9.4 9 11 5.2-1.6 9-6 9-11V7l-9-5z"/></svg>
+          <div>
+            <h3>One workshop, start to finish</h3>
+            <p>Cutting and bending happen under the same roof, so there's no waiting on a second supplier for the fold.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+          <div>
+            <h3>Clear specs, no guesswork</h3>
+            <p>You get told upfront what thickness and length we can run, so quotes hold and jobs don't get bounced back.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2a3 3 0 1 0 6 0h6a3 3 0 1 0 6 0h2v-5l-3-4zM6.5 18.5A1.5 1.5 0 1 1 8 17a1.5 1.5 0 0 1-1.5 1.5zm13 0A1.5 1.5 0 1 1 21 17a1.5 1.5 0 0 1-1.5 1.5zM17 12V9.5h2.5L21 12h-4z"/></svg>
+          <div>
+            <h3>Boksburg based, East Rand reach</h3>
+            <p>Centrally placed on the East Rand for easy drop-off and collection from Benoni, Germiston and Alberton.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ---------- CONTACT ---------- -->
+  <section class="contact" id="quote">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker" style="color:#EF6B6F;">Get in touch</span>
+        <h2 style="color:#fff;">Request a quote.</h2>
+        <p>Tell us what you need cut or bent — we'll come back with pricing and timing.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-details">
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.4 6.4l2.1-2.1c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.1 21 3 12.9 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1L6.6 10.8z"/></svg>
+            <div>
+              <div class="k">Contact person</div>
+              <div class="v">Theuns Jacobs</div>
+              <a href="tel:+27824631574" class="v" style="display:block;color:#B9BABD;">082 463 1574</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <div>
+              <div class="k">Email</div>
+              <a class="v" href="mailto:Technical@edensteeleng.co.za">Technical@edensteeleng.co.za</a>
+            </div>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.4 8 12 8 12s8-6.6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+            <div>
+              <div class="k">Workshop address</div>
+              <div class="v">Unit 5, 225 Brakpan Road,<br>Boksburg, 1459</div>
+            </div>
+          </div>
+          <div class="map-wrap">
+            <iframe
+              title="Eden Steel Engineering location map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Unit+5,+225+Brakpan+Road,+Boksburg,+1459,+South+Africa&output=embed">
+            </iframe>
+          </div>
+        </div>
+
+        <form class="quote-form" id="quoteForm">
+          <div class="form-row2">
+            <div style="flex:1;">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div style="flex:1;">
+              <label for="company">Company (optional)</label>
+              <input type="text" id="company" name="company" placeholder="Company name">
+            </div>
+          </div>
+          <div class="form-row2">
+            <div style="flex:1;">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
+            <div style="flex:1;">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="082 000 0000">
+            </div>
+          </div>
+          <div>
+            <label for="service">What do you need?</label>
+            <select id="service" name="service">
+              <option>Laser cutting</option>
+              <option>Bending</option>
+              <option>Laser cutting and bending</option>
+              <option>Not sure — need advice</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Job details</label>
+            <textarea id="message" name="message" placeholder="Material, thickness, quantity, sizes — or attach a drawing when we reply." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-red" style="width:100%;">Send request</button>
+          <div id="formStatus"></div>
+          <div class="form-note">Prefer email? Send drawings straight to Technical@edensteeleng.co.za.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>© <span id="year"></span> Eden Steel Engineering (Pty) Ltd. Innovating the future with steel.</div>
+    <div>Unit 5, 225 Brakpan Road, Boksburg, 1459 &nbsp;·&nbsp; <a href="tel:+27824631574">082 463 1574</a> &nbsp;·&nbsp; <a href="mailto:Technical@edensteeleng.co.za">Technical@edensteeleng.co.za</a></div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="tel:+27824631574">
+    <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.7 3.6 4.9 6.4 6.4l2.1-2.1c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.1 21 3 12.9 3 3c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.2 1.1L6.6 10.8z"/></svg>
+    Call
+  </a>
+  <a href="#quote">
+    <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    Get a quote
+  </a>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Formspree submit handler — replace YOUR_FORM_ID below with the real Formspree form ID.
+  const FORM_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+  const form = document.getElementById('quoteForm');
+  const status = document.getElementById('formStatus');
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    status.textContent = "Sending...";
+    status.className = "";
+    const data = new FormData(form);
+    try{
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        body: data,
+        headers: { "Accept": "application/json" }
+      });
+      if(res.ok){
+        status.textContent = "Thanks — we've received your request and will reply by email shortly.";
+        status.className = "ok";
+        form.reset();
+      } else {
+        status.textContent = "Something went wrong sending that. Please email Technical@edensteeleng.co.za directly.";
+        status.className = "err";
+      }
+    } catch(err){
+      status.textContent = "Couldn't send — please email Technical@edensteeleng.co.za directly.";
+      status.className = "err";
+    }
+  });
+</script>
+
+</body>
+</html>
